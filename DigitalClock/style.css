@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #ff4dff;
+    
+}
+
+html{
+    font-size: 72.5%;
+}
+
+body{
+    background-color: #100C08;
+    font-size: 4rem;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.title{
+    position: absolute;
+    top: 5%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 5rem;
+    -webkit-text-stroke-color:  #10eedb9d;
+    
+    -webkit-text-stroke-width: .2rem;
+    text-shadow: 0px 10px 5px  rgb(179, 127, 127);
+}
+
+
+.heading{
+    position: absolute;
+    top: 18%;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    text-align: center;
+    
+}
+.heading > div {
+    background: #1a1a00; /* Sets the background color */
+    width: 15rem; /* Sets a fixed width */
+    height: auto; /* Height will adjust based on content */
+    padding: 1rem 2rem; /* Sets padding inside the div */
+    border-radius: .5rem; /* Rounds the corners of the div */
+    box-shadow: 1px 3px 14px rgba(68, 65, 219, 0.829); /* Adds a shadow with specific color and blur */
+    perspective: 1500px; /* Adds perspective to the 3D effect */
+    transition: .5s ease-in-out; /* Smooth transition for the hover effect */
+    cursor: pointer;
+
+}
+
+.heading > div:hover {
+    transform: translate3d(3rem, -2rem, 5rem) rotate3d(1, 1, 0, 45deg); /* Applies a 3D transformation on hover */
+}
+
+.heading>div hr {
+    margin-bottom: .8rem;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    text-align: center;
+    width: 85%;
+
+}
+
+.container>div{
+    background:#1a130d ;
+    padding: 1rem 3rem ;
+    border-radius: 1.5rem;
+    height: 20rem;
+    width: 25rem;
+    text-align: center;
+    box-shadow: 1px 2px 14px  rgba(255, 255, 255, 0.5);
+    transition: 2s ease-in-out;
+
+    
+
+
+}
+
+.container>div:hover{
+    background:linear-gradient(to right, #522d0e , red) 50%;
+}
+
+
+
+
+.container>div p{
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+.container>div div{
+    color: #eee;
+    padding-bottom: 2rem;
+    font-size: 10rem;
+    
+    
+
+}
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    border-top: 1px solid cyan;
+    padding: .5rem 2rem;
+}
+
+footer span{
+    color: #80ff80;
+    padding: 0 .5rem;
+    text-transform: uppercase;
+}
+
+
+@media (max-width: 984px) {
+
+    html{
+        font-size: 55%;
+    }
+    
+}
+@media (max-width: 768px) {
+
+    html{
+        font-size: 50%;
+    }
+    
+}
+@media (max-width: 590px) {
+
+    html{
+        font-size: 35%;
+    }
+    
+}
+@media (max-width: 450px) {
+
+    html{
+        font-size: 25%;
+    }
+    
+}
+

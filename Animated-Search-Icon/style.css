@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: aliceblue;
+}
+
+.search-bar-container{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    padding: 5px;
+    background: aliceblue;
+    border-radius: 50px;
+    height: 50px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2) , -6px -6px 10px rgba(255,255,255,0.7);
+    margin: 10px;
+    position: relative;
+    transition: all 0.6s ease-in-out;
+}
+
+.magnifer{
+    width: 25px;
+    cursor: pointer;
+    position: absolute;
+    left: 15px;
+}
+
+/* i learn the transition delay property  */
+.mic{
+    width: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    transition: width .4s ;
+    transition-delay: 0.2s;
+}
+
+input{
+    background: transparent;
+    border: none;
+    outline: none;
+    margin: 10px 50px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 25px;
+    color: rgb(100, 100, 100);
+}
+
+.active.search-bar-container{
+    width: 50px;
+}
+
+.active input{
+    width: 0;
+}
+.active .mic{
+    width: 0;
+}
