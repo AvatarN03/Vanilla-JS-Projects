@@ -1,0 +1,11 @@
+{
+  "name": "vanilla-js",
+  "version": "1.0.0",
+  "description": "A collection of Vanilla JS project ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AvatarN03",
+  "license": "ISC"
+}
