@@ -1,0 +1,315 @@
+:root{
+    --bg1:linear-gradient(135deg,#D45FB8,#6E315F);
+    --headColor:#634F8C;
+    --card:#202147;
+    --cardImage:#6D3285;
+    --para:#BBB2B2;
+    --button:#D45FB8;
+    --buttonText:#4D264E;
+    --profileBg:#AB0789;
+    --Icon:#202147;
+    --white:#ffffff;
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition:  all .3s ease;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+    display: block;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.header{
+    width: 100vw;
+    height: 7vh;
+    background: var(--headColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.title{
+    color: var(--white);
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+
+.profile{
+    position: absolute;
+    top: 0;
+    right: 7%;
+    padding: 10px;
+    border-radius: 0 0 15px 15px;
+    background: var(--profileBg);
+    
+}
+
+.profile ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    gap: 0.8rem;
+}
+
+.profile ul a{
+    background: var(--Icon);
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile ul a:hover{
+    background: var(--headColor);
+    transform: scale(1.1);
+}
+
+.profile ul a i{
+    font-size: 1rem;
+}
+
+.menu{
+    position: absolute;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    display: none;
+}
+
+.menu i{
+    font-size: 2rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.main{
+    display: flex;
+    justify-content:space-around;
+    width: 100vw;
+    min-height: 90vh;
+    background: var(--bg1);
+}
+
+
+.card-container{
+    margin: 3rem auto ;
+    display: flex;
+    justify-content: center;
+    gap: 3.3rem;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    
+}
+
+
+
+
+.card{
+    width: 335px;
+    height: 400px;
+    background: var(--card);
+    border-radius: 12px;
+    padding: 10px;
+    position: relative;
+}
+
+
+.imageContainer{
+    width: 95%;
+    margin: 0 auto;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1.5px solid var(--white);
+    filter: drop-shadow(3px 8px 4rem var(--cardImage));
+}
+
+.imageContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1.5px solid var(--white);
+}
+
+.content{
+    color: var(--white);
+    margin-top:1rem ;
+}
+
+.content h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.content p{
+    font-size: 1rem;
+    color: var(--para);
+    margin-bottom: 1rem;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+}
+
+.buttonContainer button{
+    background: var(--button);
+    padding: 8px 12px;
+    border-radius: 7px;
+}
+
+.buttonContainer button a{
+    color: var(--buttonText);
+    font-size: 1rem;
+}
+
+.sidebar{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    background: var(--Icon);
+    color: var(--button);
+    display: flex;
+    flex-grow: 1;
+    padding: 10px;
+    margin: auto;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 768px){
+
+    .menu{
+        display: block;
+        z-index: 200;
+    }
+
+    .sidebar{
+        width: 58%;
+        height: 100%;
+        position: fixed;
+        background: var(--Icon);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+        left: -80%;
+        top: 0;
+        z-index: 100;
+        color: white;
+        padding: 20px;
+
+    }
+    .sidebar li{
+        list-style: none;
+        width: 100%;
+        background: var(--headColor);
+        padding: 20px;
+        border-radius: 12px;
+        margin-left: 0;
+    }
+
+    .sidebar li a{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1rem;
+        align-items: center;
+        font-size: 1.7rem;
+        
+       
+        width: 100%;
+    }
+
+    .sidebar li a i{
+        padding: 8px;
+        border-radius: 10px;
+        background: var(--buttonText);
+    }
+   
+
+    .active{
+        left: 0;
+    }
+
+    .profile{
+        display: none;
+    }
+
+    .title{
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .card-container{
+        gap: 1.5rem;
+    }
+
+    .card{
+        width: 300px;
+        height: 350px;
+    }
+
+    .content h1{
+        font-size: 1.3rem;
+    }
+
+    .content p{
+        font-size: 0.9rem;
+    }
+
+    .buttonContainer button{
+        padding: 6px 10px;
+    }
+
+    .buttonContainer button a{
+        font-size: 0.9rem;
+    }
+    
+}

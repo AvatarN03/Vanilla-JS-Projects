@@ -1,35 +1,48 @@
 const allProjectData = {
-    projects: [
-        { id: 1, title: "Project 1", description: "Description for project 1", technologies: ["HTML", "CSS", "JavaScript"], link: "https://example.com/project1" },
-        { id: 2, title: "Project 2", description: "Description for project 2", technologies: ["HTML", "CSS"], link: "https://example.com/project2" },
-        { id: 3, title: "Project 3", description: "Description for project 3", technologies: ["JavaScript", "Bootstrap"], link: "https://example.com/project3" },
-        { id: 4, title: "Project 4", description: "Description for project 4", technologies: ["HTML", "JavaScript"], link: "https://example.com/project4" },
-        { id: 5, title: "Project 5", description: "Description for project 5", technologies: ["CSS", "Bootstrap"], link: "https://example.com/project5" },
-        { id: 6, title: "Project 6", description: "Description for project 6", technologies: ["HTML", "CSS", "JavaScript"], link: "https://example.com/project6" },
-        { id: 7, title: "Project 7", description: "Description for project 7", technologies: ["React", "CSS"], link: "https://example.com/project7" },
-        { id: 8, title: "Project 8", description: "Description for project 8", technologies: ["Vue", "HTML"], link: "https://example.com/project8" },
-        { id: 9, title: "Project 9", description: "Description for project 9", technologies: ["JavaScript", "Node.js"], link: "https://example.com/project9" },
-        { id: 10, title: "Project 10", description: "Description for project 10", technologies: ["HTML", "CSS"], link: "https://example.com/project10" },
-        { id: 11, title: "Project 11", description: "Description for project 11", technologies: ["Angular", "JavaScript"], link: "https://example.com/project11" },
-        { id: 12, title: "Project 12", description: "Description for project 12", technologies: ["CSS", "JavaScript"], link: "https://example.com/project12" },
-        { id: 13, title: "Project 13", description: "Description for project 13", technologies: ["HTML", "Bootstrap"], link: "https://example.com/project13" },
-        { id: 14, title: "Project 14", description: "Description for project 14", technologies: ["JavaScript", "HTML"], link: "https://example.com/project14" },
-        { id: 15, title: "Project 15", description: "Description for project 15", technologies: ["CSS", "React"], link: "https://example.com/project15" },
-        { id: 16, title: "Project 16", description: "Description for project 16", technologies: ["Vue", "CSS"], link: "https://example.com/project16" },
-        { id: 17, title: "Project 17", description: "Description for project 17", technologies: ["JavaScript", "Node.js"], link: "https://example.com/project17" },
-        { id: 18, title: "Project 18", description: "Description for project 18", technologies: ["HTML", "CSS"], link: "https://example.com/project18" },
-        { id: 19, title: "Project 19", description: "Description for project 19", technologies: ["React", "Bootstrap"], link: "https://example.com/project19" },
-        { id: 20, title: "Project 20", description: "Description for project 20", technologies: ["HTML", "CSS", "JavaScript"], link: "https://example.com/project20" },
-        { id: 21, title: "Project 21", description: "Description for project 21", technologies: ["Angular", "HTML"], link: "https://example.com/project21" },
-        { id: 22, title: "Project 22", description: "Description for project 22", technologies: ["CSS", "JavaScript"], link: "https://example.com/project22" },
-        { id: 23, title: "Project 23", description: "Description for project 23", technologies: ["HTML", "Bootstrap"], link: "https://example.com/project23" },
-        { id: 24, title: "Project 24", description: "Description for project 24", technologies: ["Vue", "JavaScript"], link: "https://example.com/project24" },
-        { id: 25, title: "Project 25", description: "Description for project 25", technologies: ["CSS", "Node.js"], link: "https://example.com/project25" },
-        { id: 26, title: "Project 26", description: "Description for project 26", technologies: ["HTML", "CSS"], link: "https://example.com/project26" },
-        { id: 27, title: "Project 27", description: "Description for project 27", technologies: ["React", "JavaScript"], link: "https://example.com/project27" },
-        { id: 28, title: "Project 28", description: "Description for project 28", technologies: ["Angular", "CSS"], link: "https://example.com/project28" },
-        { id: 29, title: "Project 29", description: "Description for project 29", technologies: ["HTML", "Node.js"], link: "https://example.com/project29" },
-    ]}
+  projects: [
+    {
+      id: 1,
+      title: "Age Calculator",
+      description: "An Age Calculator in Vanilla JavaScript calculates age from a given birthdate, handling leap years and months accurately. It uses HTML, CSS, and JavaScript for a simple, interactive interface.",
+      image:"https://lh3.googleusercontent.com/a/ACg8ocI8B6KTEAFKEGGdYaS1tYpSvaok7-uli05p33fdzwNNYzXUjBu8=s96-c",
+      link: "./Age-Calculator/index.html",
+    },
+    {
+      id: 1,
+      title: "Age Calculator",
+      description: "An Age Calculator in Vanilla JavaScript calculates age from a given birthdate, handling leap years and months accurately. It uses HTML, CSS, and JavaScript for a simple, interactive interface.",
+      image:"https://lh3.googleusercontent.com/a/ACg8ocI8B6KTEAFKEGGdYaS1tYpSvaok7-uli05p33fdzwNNYzXUjBu8=s96-c",
+      link: "./Age-Calculator/index.html",
+    },
+    {
+      id: 1,
+      title: "Age Calculator",
+      description: "An Age Calculator in Vanilla JavaScript calculates age from a given birthdate, handling leap years and months accurately. It uses HTML, CSS, and JavaScript for a simple, interactive interface.",
+      image:"https://lh3.googleusercontent.com/a/ACg8ocI8B6KTEAFKEGGdYaS1tYpSvaok7-uli05p33fdzwNNYzXUjBu8=s96-c",
+      link: "./Age-Calculator/index.html",
+    },
+    {
+      id: 1,
+      title: "Age Calculator",
+      description: "An Age Calculator in Vanilla JavaScript calculates age from a given birthdate, handling leap years and months accurately. It uses HTML, CSS, and JavaScript for a simple, interactive interface.",
+      image:"https://lh3.googleusercontent.com/a/ACg8ocI8B6KTEAFKEGGdYaS1tYpSvaok7-uli05p33fdzwNNYzXUjBu8=s96-c",
+      link: "./Age-Calculator/index.html",
+    },
+    {
+      id: 1,
+      title: "Age Calculator",
+      description: "An Age Calculator in Vanilla JavaScript calculates age from a given birthdate, handling leap years and months accurately. It uses HTML, CSS, and JavaScript for a simple, interactive interface.",
+      image:"https://lh3.googleusercontent.com/a/ACg8ocI8B6KTEAFKEGGdYaS1tYpSvaok7-uli05p33fdzwNNYzXUjBu8=s96-c",
+      link: "./Age-Calculator/index.html",
+    },
+    {
+      id: 1,
+      title: "Age Calculator",
+      description: "An Age Calculator in Vanilla JavaScript calculates age from a given birthdate, handling leap years and months accurately. It uses HTML, CSS, and JavaScript for a simple, interactive interface.",
+      image:"https://lh3.googleusercontent.com/a/ACg8ocI8B6KTEAFKEGGdYaS1tYpSvaok7-uli05p33fdzwNNYzXUjBu8=s96-c",
+      link: "./Age-Calculator/index.html",
+    },
+  ],
+};
 
-
-    export default allProjectData;
+export default allProjectData;
