@@ -20,6 +20,10 @@
     transition:  all .3s ease;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 a{
     text-decoration: none;
     color: var(--white);
@@ -110,6 +114,17 @@ body{
     background: var(--bg1);
 }
 
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    display: none; /* Hide initially */
+}
+
 
 .card-container{
     margin: 3rem auto ;
@@ -127,7 +142,7 @@ body{
 
 .card{
     width: 335px;
-    height: 400px;
+    height: 500px;
     background: var(--card);
     border-radius: 12px;
     padding: 10px;
@@ -143,6 +158,10 @@ body{
     border-radius: 8px;
     border: 1.5px solid var(--white);
     filter: drop-shadow(3px 8px 4rem var(--cardImage));
+}
+
+.imageContainer:hover{
+    transform: scale(1.1);
 }
 
 .imageContainer img{
@@ -168,6 +187,7 @@ body{
     font-size: 1rem;
     color: var(--para);
     margin-bottom: 1rem;
+    line-height: 1.5;
 }
 
 .buttonContainer{
@@ -183,6 +203,13 @@ body{
     background: var(--button);
     padding: 8px 12px;
     border-radius: 7px;
+    font-weight: 400;
+}
+
+.buttonContainer button:hover{
+    font-weight: 700;
+    background: var(--para);
+    transform: scale(1.05);
 }
 
 .buttonContainer button a{
@@ -212,12 +239,18 @@ body{
 
 .footer{
     background: var(--Icon);
-    color: var(--button);
+    color: var(--para);
+    letter-spacing: 1.5px;
     display: flex;
     flex-grow: 1;
     padding: 10px;
     margin: auto;
     justify-content: center;
+}
+
+.footer a{
+    display: inline-block;
+    text-transform: uppercase;
 }
 
 
@@ -260,7 +293,7 @@ body{
         align-items: center;
         gap: 1rem;
         align-items: center;
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         
        
         width: 100%;
@@ -287,13 +320,32 @@ body{
 }
 
 @media screen and (max-width: 500px){
+
+    .title{
+        font-size: 1rem;
+        z-index: 300;
+    }
+
+    
+
+    .sidebar li a i{
+        padding: 10px;
+        border-radius: 5px;
+        background: var(--buttonText);
+    }
+
     .card-container{
         gap: 1.5rem;
     }
 
     .card{
         width: 300px;
-        height: 350px;
+        height: auto;
+        padding-bottom: 25px;
+    }
+
+    .imageContainer:hover{
+        transform: scale(1);
     }
 
     .content h1{
@@ -310,6 +362,17 @@ body{
 
     .buttonContainer button a{
         font-size: 0.9rem;
+    }
+    
+}
+
+@media screen and (max-width:350px) {
+
+    .title{
+       text-align: left;
+    }
+    .sidebar li a{
+        flex-direction: column;
     }
     
 }

@@ -19,74 +19,19 @@ Menu.addEventListener("click", () => {
 })
 
 
-// // Get the row container
-// const rowContainer = document.querySelector(".row");
-
-// // Function to create and append project cards
-// function renderProjects(allProjectData) {
-//     allProjectData.projects.map(project => {
-//         // Create column div
-//         const colDiv = document.createElement("div");
-//         colDiv.className = "col";
-
-//         // Create card div
-//         const cardDiv = document.createElement("div");
-//         cardDiv.className = "card h-100";
-
-//         // Create card body
-//         const cardBody = document.createElement("div");
-//         cardBody.className = "card-body";
-
-        
-//         // Create card title
-//         const cardTitle = document.createElement("h5");
-//         cardTitle.className = "card-title";
-//         cardTitle.textContent = project.title;
-
-//         // Create card text
-//         const cardText = document.createElement("p");
-//         cardText.className = "card-text";
-//         cardText.textContent = project.description;
-
-//         // Create view button
-//         const viewButton = document.createElement("a");
-//         viewButton.className = "btn btn-primary";
-//         viewButton.href = project.link;
-//         viewButton.textContent = "View Project";
-
-//         // Append elements to card body
-//         cardBody.appendChild(cardTitle);
-//         cardBody.appendChild(cardText);
-//         cardBody.appendChild(viewButton);
-
-//         // Append card body to card
-//         cardDiv.appendChild(cardBody);
-
-//         // Append card to column
-//         colDiv.appendChild(cardDiv);
-
-//         // Append column to row container
-//         rowContainer.appendChild(colDiv);
-//     });
-// }
-
-// // Render projects
-// renderProjects(allProjectData);
-
-
-
-
-// I am Trying 
-
 
 
 
 // // Get the row container
 const cardContainer = document.querySelector(".card-container");
+const loader = document.getElementById("loader"); // Get loader element
+
+// Show the loader before rendering
+loader.style.display = "block";
 
 // // Function to create and append project cards
 function renderProjects(allProjectData) {
-    console.log(allProjectData)}
+    console.log(allProjectData)
     allProjectData.projects.map(project => {
         const card = document.createElement("div");
         card.className = "card";
@@ -114,6 +59,7 @@ function renderProjects(allProjectData) {
         const button = document.createElement("button");
         const anchor = document.createElement("a");
         anchor.href = project.link;
+        anchor.setAttribute("target", "_blank");
         anchor.textContent = "View Project";
         button.appendChild(anchor);
         buttonContainer.appendChild(button);
@@ -125,50 +71,12 @@ function renderProjects(allProjectData) {
 
         cardContainer.appendChild(card);
     })
-//         // Create column div
-//         const colDiv = document.createElement("div");
-//         colDiv.className = "col";
+    loader.style.display = "none";
+}
 
-//         // Create card div
-//         const cardDiv = document.createElement("div");
-//         cardDiv.className = "card h-100";
 
-//         // Create card body
-//         const cardBody = document.createElement("div");
-//         cardBody.className = "card-body";
 
-        
-//         // Create card title
-//         const cardTitle = document.createElement("h5");
-//         cardTitle.className = "card-title";
-//         cardTitle.textContent = project.title;
 
-//         // Create card text
-//         const cardText = document.createElement("p");
-//         cardText.className = "card-text";
-//         cardText.textContent = project.description;
-
-//         // Create view button
-//         const viewButton = document.createElement("a");
-//         viewButton.className = "btn btn-primary";
-//         viewButton.href = project.link;
-//         viewButton.textContent = "View Project";
-
-//         // Append elements to card body
-//         cardBody.appendChild(cardTitle);
-//         cardBody.appendChild(cardText);
-//         cardBody.appendChild(viewButton);
-
-//         // Append card body to card
-//         cardDiv.appendChild(cardBody);
-
-//         // Append card to column
-//         colDiv.appendChild(cardDiv);
-
-//         // Append column to row container
-//         rowContainer.appendChild(colDiv);
-//     });
-// }
-
-// // Render projects
-renderProjects(allProjectData);
+setTimeout(() => {
+    renderProjects(allProjectData);
+}, 1000);  
