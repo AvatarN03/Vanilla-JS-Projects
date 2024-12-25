@@ -1,6 +1,8 @@
 // Array of project details
 import allProjectData from "./data.js"
 
+
+
 const Menu = document.querySelector(".menu i ");
 const sidebar = document.querySelector(".sidebar");
 Menu.classList.add("ri-menu-line")

@@ -207,7 +207,6 @@ body{
 }
 
 .buttonContainer button:hover{
-    font-weight: 700;
     background: var(--para);
     transform: scale(1.05);
 }
@@ -220,6 +219,7 @@ body{
 .sidebar{
     display: none;
 }
+
 
 
 
@@ -360,16 +360,29 @@ body{
         padding: 6px 10px;
     }
 
+    .buttonContainer button:hover{
+        background: var(--button);
+    }
+
+    .buttonContainer button:active{
+        background: var(--para);
+        
+    }
+
     .buttonContainer button a{
         font-size: 0.9rem;
     }
     
 }
 
-@media screen and (max-width:350px) {
+@media screen and (max-width:380px) {
 
     .title{
        text-align: left;
+    }
+
+    .sidebar li{
+        padding: 5px;
     }
     .sidebar li a{
         flex-direction: column;

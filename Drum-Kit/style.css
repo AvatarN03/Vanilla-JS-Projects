@@ -36,3 +36,16 @@ body{
 .btn:active{
     background-size: 105%;
 }
+
+@media screen and (max-width: 768px){
+    
+
+    .container{
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    
+}
