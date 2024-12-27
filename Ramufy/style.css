@@ -34,6 +34,7 @@ nav ul li{
 }
 .brand img{
     width: 60px;
+    aspect-ratio: 1;
     
     border-radius: 50%;
     border: 3px solid white;
@@ -90,6 +91,7 @@ nav ul li{
     border: 3px solid rgb(231, 152, 41);
 }
 .songItem img{
+    aspect-ratio: 1/1;
     width: 43px;
     margin:0 23px ;
     border: 1px solid black;

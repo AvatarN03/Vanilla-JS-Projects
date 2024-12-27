@@ -103,7 +103,7 @@ const allProjectData = {
       title: "RingTrail",
       description: "A RingTrail Animation Cursor Effect creates a heart-shaped trail that follows the cursor as it moves, achieved with CSS and JavaScript for animation and positioning.",
       image:"./assets/Heart.jpg",
-      link: "./HeartTrail/index.html",
+      link: "./RingTrail/index.html",
     },
     {
       id: 16,
@@ -180,7 +180,7 @@ const allProjectData = {
       title: "Todo-List",
       description: "A To-Do List using `localStorage` saves tasks persistently, allowing users to add, delete, and manage tasks with HTML, CSS, and JavaScript.",
       image:"./assets/todo.jpg",
-      link: "./Todo_List/index.html",
+      link: "./Todo-List/index.html",
     },
     {
       id: 27,

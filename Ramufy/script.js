@@ -9,11 +9,11 @@ let mastersonginfo  = document.getElementById('mastersonginfo');
 let songItems = Array.from(document.getElementsByClassName("songItem"));
 
 let songs = [
-    {songName: "Aigiri ", filePath:"songs/1.mp3", coverPath:"Goddes.jpg"  },
+    {songName: "Aigiri ", filePath:"songs/1.mp3", coverPath:"../assets/Goddes.jpg"  },
 
-    {songName: "shiva ", filePath:"songs/2.mp3", coverPath:"Shiva-1.jpg"  },
+    {songName: "Shiva ", filePath:"songs/2.mp3", coverPath:"../assets/Shiva-1.jpg"  },
 
-    {songName: "Snehithane ", filePath:"songs/3.mp3", coverPath:"Goddes.jpg"  }  ,                                                                                                                                    
+    {songName: "Snehithane ", filePath:"songs/3.mp3", coverPath:"../assets/veena.png"  }  ,                                                                                                                                    
 ]
 
 songItems.forEach((element,i)=>{

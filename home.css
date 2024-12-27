@@ -221,22 +221,6 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer{
     background: var(--Icon);
     color: var(--para);
@@ -386,6 +370,10 @@ body{
     }
     .sidebar li a{
         flex-direction: column;
+    }
+
+    .footer p{
+        font-size: 0.8rem;
     }
     
 }
