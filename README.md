@@ -22,7 +22,7 @@
 
 
 ## Key Features
-*Navigation: Smooth navigation between the main page and the list of projects.
+* Navigation: Smooth navigation between the main page and the list of projects.
 * Project Listing: Clear and concise project listings with optional filtering and sorting.
 * Project Details: Detailed project information, potentially including descriptions, screenshots, and links.
 * Responsive: The Website is Responsive to the Devices.
@@ -35,7 +35,7 @@
 ```bash
 # Clone this repository
 $ git clone https://github.com/amitmerchant1990/electron-markdownify
-
+```
 # Go into the index.html
 // Open with live server or in the Browser
 
@@ -49,9 +49,9 @@ $ git clone https://github.com/amitmerchant1990/electron-markdownify
 
 This website home page was develop by me, but the projects are from the Youtube Tutorial:
 
-- [JavaScript King](http://electron.atom.io/)
-- [GreatStack](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
+<a>[JavaScript King]</a>
+<a>[GreatStack]</a>
+<a>[Marked - a markdown parser]</a>
 
 
 
@@ -68,7 +68,7 @@ You can support and motivate me by follow and make sure to leave a star. ThankYo
 
 ## You can follow me on 
 
-> Instagram (https://www.amitmerchant.com) &nbsp;&middot;&nbsp;
-> LinkedIn [@amitmerchant1990](https://github.com/amitmerchant1990) &nbsp;&middot;&nbsp;
-> Twitter [@amit_merchant](https://twitter.com/amit_merchant)
+> <a>Instagram (https://www.amitmerchant.com) &nbsp;&middot;&nbsp;</a>
+> <a>LinkedIn [@amitmerchant1990](https://github.com/amitmerchant1990) &nbsp;&middot;&nbsp;</a>
+> <a>Twitter [@amit_merchant](https://twitter.com/amit_merchant)</a>
 
