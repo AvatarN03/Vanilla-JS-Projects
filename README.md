@@ -49,9 +49,9 @@ $ git clone https://github.com/amitmerchant1990/electron-markdownify
 
 This website home page was develop by me, but the projects are from the Youtube Tutorial:
 
-<a>[JavaScript King]</a>
-<a>[GreatStack]</a>
-<a>[Marked - a markdown parser]</a>
+<a>[JavaScript King]</a><br>
+<a>[GreatStack]</a><br>
+<a>[Marked - a markdown parser]</a><br>
 
 
 
@@ -68,7 +68,7 @@ You can support and motivate me by follow and make sure to leave a star. ThankYo
 
 ## You can follow me on 
 
-> <a>Instagram (https://www.amitmerchant.com) &nbsp;&middot;&nbsp;</a>
-> <a>LinkedIn [@amitmerchant1990](https://github.com/amitmerchant1990) &nbsp;&middot;&nbsp;</a>
-> <a>Twitter [@amit_merchant](https://twitter.com/amit_merchant)</a>
+> <a>Instagram (https://www.amitmerchant.com) &nbsp;&middot;&nbsp;</a><br>
+> <a>LinkedIn [@amitmerchant1990](https://github.com/amitmerchant1990) &nbsp;&middot;&nbsp;</a><br>
+> <a>Twitter [@amit_merchant](https://twitter.com/amit_merchant)</a><br>
 
