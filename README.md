@@ -1,13 +1,14 @@
 
 <h1 align="center">
   <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.png" alt="Markdownify" width="200"></a>
+  <a href="[http://www.amitmerchant.com/electron-markdownify](https://avatarn03.github.io/Vanilla-JS-Projects/)"><img src="![image](https://github.com/user-attachments/assets/00b91960-d45a-40f6-9413-b62c34f114d5)
+" alt="Vanilla JS" width="200"></a>
   <br>
-  Markdownify
+  Vanilla JS Projects
   <br>
 </h1>
 
-<h4 align="center">A minimal Markdown Editor desktop app built on top of <a href="http://electron.atom.io" target="_blank">Electron</a>.</h4>
+<h4 align="center">The projects from the Vanilla JS series of videos that I learned from YouTube. </h4>
 
 <p align="center">
   <a href="https://badge.fury.io/js/electron-markdownify">
