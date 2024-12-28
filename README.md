@@ -36,10 +36,10 @@
 # Clone this repository
 $ git clone https://github.com/AvatarN03/Vanilla-JS-Projects.git
 ```
-# Go into the index.html
+## Go into the index.html
 // Open with live server or in the Browser
 
-# See the Individual Project
+## See the Individual Project
 // Navigate to the Respective folder of the project
 
 
@@ -55,7 +55,7 @@ This website home page was develop by me, but the projects are from the Youtube 
 
 ## Support
 
-You can support and motivate me by follow and make sure to leave a star. ThankYou.
+You can support and motivate me by follow and make sure to leave a star. ThankYou😁.
 
 
 ## Related
