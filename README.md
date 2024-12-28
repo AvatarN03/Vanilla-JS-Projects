@@ -34,7 +34,7 @@
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/amitmerchant1990/electron-markdownify
+$ git clone https://github.com/AvatarN03/Vanilla-JS-Projects.git
 ```
 # Go into the index.html
 // Open with live server or in the Browser
@@ -49,10 +49,8 @@ $ git clone https://github.com/amitmerchant1990/electron-markdownify
 
 This website home page was develop by me, but the projects are from the Youtube Tutorial:
 
-<a>[JavaScript King]</a><br>
-<a>[GreatStack]</a><br>
-<a>[Marked - a markdown parser]</a><br>
-
+<a href="https://www.youtube.com/@JavaScriptKing" target="_blank"> JavaScript King </a><br>
+<a href="https://www.youtube.com/@GreatStackDev" target="_blank"> GreatStack </a><br>
 
 
 ## Support
@@ -60,15 +58,17 @@ This website home page was develop by me, but the projects are from the Youtube 
 You can support and motivate me by follow and make sure to leave a star. ThankYou.
 
 
-## You may also like my other projects...
+## Related
+* You may like other projects...
 
-- [#D Portfolio](https://github.com/amitmerchant1990/pomolectron) - A Portfolio with Three.js.
-- [HealthFit2.0](https://github.com/amitmerchant1990/correo) - HealthFit app consist of Yoga and Mediation.
+- [ PlayCapital ](https://play-capital-front.vercel.app/) - Finance website with Blog  +  Games (age < 12).
+- [ 3D Portfolio ](https://portfolio-in-3-d.vercel.app/) - A Portfolio with Three.js.
+- [ HealthFit-2.0 ](https://health-fit-2-0-naidu.vercel.app/) - HealthFit app consist of Yoga and Mediation.
 
 
 ## You can follow me on 
 
-> <a>Instagram (https://www.amitmerchant.com) &nbsp;&middot;&nbsp;</a><br>
-> <a>LinkedIn [@amitmerchant1990](https://github.com/amitmerchant1990) &nbsp;&middot;&nbsp;</a><br>
-> <a>Twitter [@amit_merchant](https://twitter.com/amit_merchant)</a><br>
+> <a>Instagram (https://www.instagram.com/js.prashanth?utm_source=qr&igsh=MWJ6bmM3NHNjdHZlaw==) &nbsp;&middot;&nbsp;</a><br>
+> <a>LinkedIn (https://www.linkedin.com/in/prashanth-naidu-8049b8227/) &nbsp;&middot;&nbsp;</a><br>
+> <a>Twitter ()</a><br>
 
