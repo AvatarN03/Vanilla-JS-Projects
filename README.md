@@ -1,8 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href="[http://www.amitmerchant.com/electron-markdownify](https://avatarn03.github.io/Vanilla-JS-Projects/)"><img src="https://imgs.search.brave.com/gmRHV2B0saxCCE2KPlLGN-88NrfHJXoqCSPGTkUiL3o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ibG9n/LmxvZ3JvY2tldC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjQvMDMvYnVpbGQt/aW1hZ2UtY2Fyb3Vz/ZWwtc2NyYXRjaC12/YW5pbGxhLWphdmFz/Y3JpcHQucG5n
-" alt="Vanilla JS" width="200"></a>
+  <a href="https://avatarn03.github.io/Vanilla-JS-Projects/"><img src="https://imgs.search.brave.com/gmRHV2B0saxCCE2KPlLGN-88NrfHJXoqCSPGTkUiL3o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ibG9n/LmxvZ3JvY2tldC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjQvMDMvYnVpbGQt/aW1hZ2UtY2Fyb3Vz/ZWwtc2NyYXRjaC12/YW5pbGxhLWphdmFz/Y3JpcHQucG5n" alt="Vanilla JS" width="200"></a>
   <br>
   Vanilla JS Projects
   <br>
@@ -10,27 +9,13 @@
 
 <h4 align="center">The projects from the Vanilla JS series of videos that I learned from YouTube. </h4>
 
-<p align="center">
-  <a href="https://badge.fury.io/js/electron-markdownify">
-    <img src="https://badge.fury.io/js/electron-markdownify.svg"
-         alt="Gitter">
-  </a>
-  <a href="https://gitter.im/amitmerchant1990/electron-markdownify"><img src="https://badges.gitter.im/amitmerchant1990/electron-markdownify.svg"></a>
-  <a href="https://saythanks.io/to/bullredeyes@gmail.com">
-      <img src="https://img.shields.io/badge/SayThanks.io-%E2%98%BC-1EAEDB.svg">
-  </a>
-  <a href="https://www.paypal.me/AmitMerchant">
-    <img src="https://img.shields.io/badge/$-donate-ff69b4.svg?maxAge=2592000&amp;style=flat">
-  </a>
-</p>
 
 <p align="center">
   <a href="#key-features">Key Features</a> •
-  <a href="#how-to-use">How To Use</a> •
   <a href="#download">Download</a> •
   <a href="#credits">Credits</a> •
   <a href="#related">Related</a> •
-  <a href="#license">License</a>
+  
 </p>
 
 ![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
