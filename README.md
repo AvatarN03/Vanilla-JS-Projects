@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href="[http://www.amitmerchant.com/electron-markdownify](https://avatarn03.github.io/Vanilla-JS-Projects/)"><img src="![image](https://github.com/user-attachments/assets/00b91960-d45a-40f6-9413-b62c34f114d5)
+  <a href="[http://www.amitmerchant.com/electron-markdownify](https://avatarn03.github.io/Vanilla-JS-Projects/)"><img src="https://imgs.search.brave.com/gmRHV2B0saxCCE2KPlLGN-88NrfHJXoqCSPGTkUiL3o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ibG9n/LmxvZ3JvY2tldC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjQvMDMvYnVpbGQt/aW1hZ2UtY2Fyb3Vz/ZWwtc2NyYXRjaC12/YW5pbGxhLWphdmFz/Y3JpcHQucG5n
 " alt="Vanilla JS" width="200"></a>
   <br>
   Vanilla JS Projects
