@@ -44,10 +44,18 @@ body{
 
 
 }
-.note{
-    text-align: center;
-    color: black/20;
-}
+
+html, body {
+    height: auto !important;
+    min-height: 100%;
+  }
+  
+  [data-scroll-container] {
+    will-change: transform;
+    min-height: 100vh;
+  }
+
+
 
 .header{
     width: 100vw;
@@ -251,11 +259,8 @@ body{
     text-transform: uppercase;
 }
 
-[data-scroll-container] {
-    height: 100%;
-    overflow: hidden; /* Prevents scrollbars */
-}
 
+  
 @media screen and (max-width: 768px){
 
     .menu{

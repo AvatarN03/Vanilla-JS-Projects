@@ -5,6 +5,7 @@ const sidebar = document.querySelector(".sidebar");
 Menu.classList.add("ri-menu-line");
 
 
+
 function shuffleArray(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -84,7 +85,40 @@ function renderProjects(allProjectData) {
     loader.style.display = "none"; // Hide the loader
 }
 
+
+let currentScroll = window.scrollY;
+let targetScroll = window.scrollY;
+let isScrolling = false;
+
+function animateScroll() {
+  currentScroll += (targetScroll - currentScroll) * 0.1; // smaller = slower
+  window.scrollTo(0, currentScroll);
+  if (Math.abs(targetScroll - currentScroll) > 0.5) {
+    requestAnimationFrame(animateScroll);
+  } else {
+    isScrolling = false;
+  }
+}
+
+window.addEventListener("wheel", function (e) {
+  e.preventDefault(); // stop natural scroll
+
+  const delta = e.deltaY;
+  targetScroll += delta;
+
+  targetScroll = Math.max(0, Math.min(
+    targetScroll,
+    document.body.scrollHeight - window.innerHeight
+  ));
+
+  if (!isScrolling) {
+    isScrolling = true;
+    requestAnimationFrame(animateScroll);
+  }
+}, { passive: false });
+
+
 // Render projects with optimized function
 setTimeout(() => {
     renderProjects(allProjectData);
-}, 1000);
+}, 4000);

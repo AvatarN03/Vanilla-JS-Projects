@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/mainlogo.jpg" type="image/x-icon">
-    
+
     <title>Vanilla JS Projects</title>
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
-    integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-XcIsjKMcuVe0Ucj/xgIXQnytNwBttJbNjltBV18IOnru2lDPe9KRRyvCXw6Y5H415vbBLRm8+q6fmLUU7DfO6Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" />
+
 </head>
 
 <body data-scroll-container>
@@ -22,7 +22,7 @@
         </div>
         <div class="container">
             <h1 class="title" title="The Vanilla Js Project's Home Page">Vanilla JS Projects</h1>
-            <p class="note">Zoom out-in for scrolling to take place</p>
+
         </div>
         <div class="profile">
             <ul>
@@ -49,30 +49,17 @@
 
     <main class="main">
         <div class="loader" id="loader">Loading...</div>
-        <div class="card-container" data-scroll data-scroll-speed="0.5">
+
+
+        <div class="card-container">
         </div>
+
     </main>
 
     <footer class="footer">
         <p>&#169; CopyRight @24 by <a href="">Prashanth Naidu</a></p>
     </footer>
 
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
-    <script>
-        window.addEventListener("load", () => {
-            const scroll = new LocomotiveScroll({
-                el: document.querySelector('[data-scroll-container]'),
-                smooth: true
-            });
-
-            // Optional: update after everything is ready
-            setTimeout(() => scroll.update(), 100);
-        });
-    </script>
 
 
 
