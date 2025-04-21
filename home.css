@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap");
+
+
 :root{
     --bg1:linear-gradient(135deg,#D45FB8,#6E315F);
     --headColor:#634F8C;
@@ -12,6 +15,8 @@
 
 
 }
+
+
 
 *{
     margin: 0;
@@ -34,6 +39,14 @@ body{
     width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
+    background: linear-gradient(45deg, #813A6F, #D56D9A);
+
+
+
+}
+.note{
+    text-align: center;
+    color: black/20;
 }
 
 .header{
@@ -111,7 +124,8 @@ body{
     justify-content:space-around;
     width: 100vw;
     min-height: 90vh;
-    background: var(--bg1);
+   
+    padding-bottom: 50px;
 }
 
 .loader {
@@ -237,6 +251,10 @@ body{
     text-transform: uppercase;
 }
 
+[data-scroll-container] {
+    height: 100%;
+    overflow: hidden; /* Prevents scrollbars */
+}
 
 @media screen and (max-width: 768px){
 
