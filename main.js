@@ -35,16 +35,13 @@ Menu.addEventListener("click", () => {
         Menu.classList.remove("ri-menu-line");
         Menu.classList.add("ri-arrow-left-circle-line");
     }
-    console.log("Menu toggled");
+    
 });
 
 const cardContainer = document.querySelector(".card-container");
-const loader = document.getElementById("loader"); // Get loader element
-
-// Show the loader before rendering
+const loader = document.getElementById("loader"); 
 loader.style.display = "block";
 
-// Optimized function to create and append project cards
 function renderProjects(allProjectData) {
     console.log(allProjectData);
     const shuffledProjects = shuffleArray([...allProjectData.projects]);
