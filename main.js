@@ -4,6 +4,18 @@ const Menu = document.querySelector(".menu i");
 const sidebar = document.querySelector(".sidebar");
 Menu.classList.add("ri-menu-line");
 
+setTimeout(()=>{
+
+  const scroll = new LocomotiveScroll({
+    el: document.querySelector('#section'),
+    smooth: true,
+    lerp: 0.1,
+    multiplier: 1.2,
+    smoothMobile: true,
+    smartphone: { smooth: true },
+  });
+}, 10000)
+
 
 
 function shuffleArray(arr) {
@@ -85,40 +97,8 @@ function renderProjects(allProjectData) {
     loader.style.display = "none"; // Hide the loader
 }
 
+setTimeout(()=>{
 
-let currentScroll = window.scrollY;
-let targetScroll = window.scrollY;
-let isScrolling = false;
+  renderProjects(allProjectData);
+}, 8200)
 
-function animateScroll() {
-  currentScroll += (targetScroll - currentScroll) * 0.1; // smaller = slower
-  window.scrollTo(0, currentScroll);
-  if (Math.abs(targetScroll - currentScroll) > 0.5) {
-    requestAnimationFrame(animateScroll);
-  } else {
-    isScrolling = false;
-  }
-}
-
-window.addEventListener("wheel", function (e) {
-  e.preventDefault(); // stop natural scroll
-
-  const delta = e.deltaY;
-  targetScroll += delta;
-
-  targetScroll = Math.max(0, Math.min(
-    targetScroll,
-    document.body.scrollHeight - window.innerHeight
-  ));
-
-  if (!isScrolling) {
-    isScrolling = true;
-    requestAnimationFrame(animateScroll);
-  }
-}, { passive: false });
-
-
-// Render projects with optimized function
-setTimeout(() => {
-    renderProjects(allProjectData);
-}, 4000);

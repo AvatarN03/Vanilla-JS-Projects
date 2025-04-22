@@ -25,9 +25,6 @@
     transition:  all .3s ease;
 }
 
-html{
-    scroll-behavior: smooth;
-}
 
 a{
     text-decoration: none;
@@ -36,24 +33,17 @@ a{
 }
 
 body{
-    width: 100vw;
-    min-height: 100vh;
     overflow-x: hidden;
+    font-family: JuliusSansOne, sans-serif;
+    
     background: linear-gradient(45deg, #813A6F, #D56D9A);
 
 
 
 }
 
-html, body {
-    height: auto !important;
-    min-height: 100%;
-  }
-  
-  [data-scroll-container] {
-    will-change: transform;
-    min-height: 100vh;
-  }
+
+
 
 
 
@@ -156,6 +146,7 @@ html, body {
     align-items: center;
     flex-wrap: wrap;
     max-width: 1200px;
+    height: auto;
     
 }
 
