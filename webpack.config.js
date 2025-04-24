@@ -13,7 +13,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html', // Path to your main HTML file
+      template: './index.html', // <--- Updated path to index.html in the root
     }),
   ],
 };
