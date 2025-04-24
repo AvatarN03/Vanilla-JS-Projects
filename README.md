@@ -1,21 +1,21 @@
 
 <h1 align="center">
-  <br>
-  <a href="https://avatarn03.github.io/Vanilla-JS-Projects/"><img src="https://imgs.search.brave.com/gmRHV2B0saxCCE2KPlLGN-88NrfHJXoqCSPGTkUiL3o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ibG9n/LmxvZ3JvY2tldC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjQvMDMvYnVpbGQt/aW1hZ2UtY2Fyb3Vz/ZWwtc2NyYXRjaC12/YW5pbGxhLWphdmFz/Y3JpcHQucG5n" alt="Vanilla JS" width="200"></a>
-  <br>
-  Vanilla JS Projects
-  <br>
+  <br>
+  <a href="https://avatarn03.github.io/Vanilla-JS-Projects/"><img src="https://imgs.search.brave.com/gmRHV2B0saxCCE2KPlLGN-88NrfHJXoqCSPGTkUiL3o/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9ibG9n/LmxvZ3JvY2tldC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjQvMDMvYnVpbGQt/aW1hZ2UtY2Fyb3Vz/ZWwtc2NyYXRjaC12/YW5pbGxhLWphdmFz/Y3JpcHQucG5n" alt="Vanilla JS" width="200"></a>
+  <br>
+  Vanilla JS Projects
+  <br>
 </h1>
 
 <h4 align="center">The projects from the Vanilla JS series of videos that I learned from YouTube. </h4>
 
 
 <p align="center">
-  <a href="#key-features">Key Features</a> •
-  <a href="#download">Download</a> •
-  <a href="#credits">Credits</a> •
-  <a href="#related">Related</a> •
-  
+  <a href="#key-features">Key Features</a> •
+  <a href="#download">Download</a> •
+  <a href="#credits">Credits</a> •
+  <a href="#related">Related</a> •
+  
 </p>
 
 ![image](https://github.com/user-attachments/assets/138b49e2-3a10-4b07-b0c1-0254851fe5fc)
@@ -61,14 +61,12 @@ You can support and motivate me by follow and make sure to leave a star. ThankYo
 ## Related
 * You may like other projects...
 
-- [ PlayCapital ](https://play-capital-front.vercel.app/) - Finance website with Blog  +  Games (age < 12).
+- [ PlayCapital ](https://play-capital-front.vercel.app/) - Finance website with Blog  +  Games (age < 12).
 - [ 3D Portfolio ](https://portfolio-in-3-d.vercel.app/) - A Portfolio with Three.js.
 - [ HealthFit-2.0 ](https://health-fit-2-0-naidu.vercel.app/) - HealthFit app consist of Yoga and Mediation.
 
 
-## You can follow me on 
+## You can follow me on 
 
 > <a>Instagram (https://www.instagram.com/js.prashanth?utm_source=qr&igsh=MWJ6bmM3NHNjdHZlaw==) &nbsp;&middot;&nbsp;</a><br>
 > <a>LinkedIn (https://www.linkedin.com/in/prashanth-naidu-8049b8227/) &nbsp;&middot;&nbsp;</a><br>
-> <a>Twitter ()</a><br>
-
