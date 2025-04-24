@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #222;
+    width: 100vw;
+    min-height: 100vh;
+    color: white;
+    overflow: hidden;
+}
+
+h1,p{
+    text-align: center;
+    font-size: 3rem;
+    margin: 1rem 0;
+    text-shadow: 0 5px 55px rgb(132, 111, 226);;
+}
+p{
+    font-size: 1.2rem;
+}
+
+span{
+    background: url("../assets/ring.png") center no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    pointer-events: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(360deg);
+    animation: animate 15s  linear;
+}
+
+@keyframes animate {
+    0%{
+        transform:  translate(-50%, -50%) rotate(0);
+        opacity: 1;
+        filter: hue-rotate(0);
+    }
+    8%{
+        
+        opacity: 0.15;
+        filter: hue-rotate(360deg);
+    }
+    100%{
+        transform: translate(-50%, -5000%) rotate(720deg);
+        opacity: 0;
+        filter: hue-rotate(720deg);
+    }
+}

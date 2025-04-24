@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cursor-Animation</title>
+    <link rel="shortcut icon" href="../assets/Cursor.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="shadow1"></div>
+    <section class="main">
+        <h1>Cursor Animation</h1>
+    </section>
+    <div class="shadow2"></div>
+</body>
+<script>
+    const cursor = document.querySelector('.cursor');
+    let timevar;
+
+    function showCursor(x, y) {
+        cursor.style.top = y + 'px';
+        cursor.style.left = x + 'px';
+        cursor.style.display = 'block';
+
+        clearTimeout(timevar);
+        timevar = setTimeout(() => {
+            cursor.style.display = 'none';
+        }, 1000);
+    }
+
+    // Mouse support
+    document.addEventListener('mousemove', (e) => {
+        showCursor(e.pageX, e.pageY);
+    });
+
+    document.addEventListener('mouseout', () => {
+        cursor.style.display = 'none';
+    });
+
+    // Touch support
+    document.addEventListener('touchmove', (e) => {
+        const touch = e.touches[0];
+        showCursor(touch.pageX, touch.pageY);
+    });
+
+    document.addEventListener('touchend', () => {
+        cursor.style.display = 'none';
+    });
+</script>
+
+
+</html>

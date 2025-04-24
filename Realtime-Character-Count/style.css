@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
+    flex-direction: column;
+    text-align: center;
+    background: orange;
+    font-weight: 400;
+}
+
+.container{
+    background: lightpink;
+    border-radius: 15px;
+    box-shadow: 0 0 8px purple;
+    width: 400px;
+    padding: 20px;
+    margin: 20px;
+
+}
+
+/* if there are 2 class to apply then ex. .one.two */
+
+textarea{
+    width: 100%;
+    font-family: sans-serif;
+    height: auto;
+    min-height: 100px;
+    resize: none;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.counter-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.counter-container p{
+    font-size: 18px;
+    color: gray;
+}
+
+.total-characters{
+    color: slateblue;
+}
+
+.remaining-characters{
+    color: black;
+}
+
+@media screen and (max-width: 500px){
+    .container{
+        width: 90%;
+        margin: auto;
+        padding: 10px;
+    }
+    textarea{
+        font-size: 16px;
+        min-height: 150px;
+    }
+    .counter-container p{
+        font-size: 16px;
+    }
+    
+}
