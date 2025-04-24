@@ -1,0 +1,740 @@
+
+:root{
+    --green:#00E77F;
+    --white:#fff;
+    --light-white:#aaa;
+    --black:#3d3d3d;
+    --light-bg:#4b4b4b;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    /* appearance: none; */
+    font-family: 'Rubik', sans-serif;
+    transition: .4s ease-in-out;
+    text-transform: capitalize;
+}
+
+*::selection{
+    background: var(--white);
+    color: var(--black);
+}
+
+html{
+    font-size: 72.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+}
+
+::-webkit-scrollbar{
+    width: 1rem;
+    height: .5rem;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--green);
+    border-radius: 4rem;
+}
+
+body{
+    background: var(--black);
+}
+#root{
+    opacity: 0;
+}
+
+#loading{
+    z-index: 900;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+}
+
+#loading span{
+    width: 15rem;
+    height: 15rem;
+    border: 12px solid #3333335a;
+    border-top: 12px solid greenyellow;
+    border-radius: 50%;
+    animation: anime .83s infinite linear ;
+
+    
+    
+}
+
+@keyframes anime {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+
+section{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    background: var(--light-bg);
+    
+}
+
+.header .flex{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header .flex a{
+    font-size: 3.5rem;
+    color: var(--white);
+}
+
+.header .flex nav a{
+    margin-left: 2rem;
+    color: var(--light-white);
+    font-size: 2rem;
+}
+
+.header .flex nav a:hover{
+    color: var(--green);
+}
+
+#menu{
+    cursor: pointer;
+    color: var(--white);
+    font-size: 2rem;
+    display: none;
+}
+
+.home{
+    margin-top: 8rem;
+    padding: 2rem 0;
+}
+
+.home .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 2rem;
+}
+
+.home .row .content{
+    flex: 1  1 40rem;
+    text-align: center;
+}
+.home .row .content h2{
+    font-size: 9rem;
+    color: var(--white);
+    margin-bottom: 4rem;
+    line-height: 11rem;
+}
+
+.home .row .content h2 span{
+    color: var(--green);
+}
+
+.btn{
+    display: inline-block;
+    position: relative;
+    margin-top: 2rem;
+    padding: 1rem 3rem;
+    border-radius: 6rem;
+    background: var(--light-bg);
+    font-size: 1.8rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: var(--black);
+    background: var(--white);
+}
+
+.btn:hover::after{
+    content: '\f061'; /* Unicode for the fa-arrow-right icon in Font Awesome */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900; /* Required for solid icons */
+    color: #28c85d;
+    margin-left: 1rem;
+    transition: .3s ease-in-out;
+    right: 0; 
+}
+
+
+
+.home .row .image{
+    flex: 1  1 40rem;
+}
+
+
+.home .row .image img{
+    width: 100%;
+    mix-blend-mode: darken;
+    
+}
+
+.counts .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    place-items: center;
+    margin: auto;
+    gap: 2rem;
+    align-items: center;
+}
+
+.counts .box-container .box{
+    background: var(--light-bg);
+    border-radius: .5rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    box-shadow:1px 1px 10px var(--light-white);
+
+}
+
+.counts .box-container .box i{
+    font-size: 6rem;
+    color: var(--green);
+   
+}
+
+.counts .box-container .box .content h3{
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: .5rem;
+}
+.counts .box-container .box .content p{
+    font-size: 1.6rem;
+    color: var(--light-white);
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.about .row .image{
+    flex: 1 1 40rem;
+    border-radius: 3rem;
+    overflow: hidden;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+
+.about .row .content{
+    flex: 1 1 40rem;
+    text-align: center;
+}
+
+.about .row .content h3{
+    font-size: 4rem;
+    color: var(--white);
+}
+
+.about .row .content p{
+    padding: 1rem 4rem;
+    color: var(--light-white);
+    line-height: 2;
+    font-size: 1.4rem;
+    text-align: justify;
+}
+
+.courses h1{
+    margin: 3rem 0;
+    font-size: 8rem;
+    text-align: center;
+    color: var(--white);
+    border-top: .2rem solid var(--light-white);
+    padding-top: 2rem;
+}
+
+.courses h1 span{
+    color: var(--green);
+}
+
+.courses .slide{
+    background: var(--light-bg);
+    text-align: center;
+    margin-bottom: 4rem;
+    border-radius: .5rem;
+}
+
+.courses .slide img{
+    width: 100%;
+    height: 28rem;
+}
+
+.courses .slide h3{
+    margin: 2rem 0;
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+.courses .slide p{
+    line-height: 2;
+    color: var(--light-white);
+    font-size: 1.7rem;
+
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+    background-color: var(--white);
+}
+
+
+
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet-active{
+    background: var(--green);
+}
+
+
+.teachers h1{
+    font-size: 8rem;
+    text-align: center;
+    color: var(--white);
+    margin: 3rem 0;
+    border-top: .2rem solid var(--light-white);
+    padding-top: 2rem;
+}
+
+.teachers h1 span{
+    color: var(--green);
+}
+
+.teachers .slide{
+    position: relative;
+    overflow: hidden;
+    width: 45rem;
+    background: var(--light-bg);
+    border-radius: .5rem;
+    border: 1px solid var(--white);
+    margin-bottom: 4rem;
+}
+
+.teachers .slide img{
+    height: 57rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .7rem;
+}
+
+.teachers .slide:hover img{
+    filter: brightness(.65) blur(2px);
+}
+
+.teachers .slide h3{
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+
+.teachers .slide .share{
+    position: absolute;
+    top: 2rem;
+    left: -8rem;
+    
+   
+}
+
+
+
+
+.teachers .slide .share a{
+    display: block;
+    text-align: center;
+    margin-top: 1.5rem;
+    width: 4.8rem;
+    height: 4.8rem;
+    line-height: 4.2rem;
+    border-radius: .6rem;
+    color: var(--black);
+    background-color: var(--white);
+    font-size: 4rem;
+    
+
+}
+
+.teachers .slide:hover .share {
+    left: 3rem;
+    
+    
+}
+.teachers .slide:hover .share a{
+    box-shadow: 0 0 50px 0 var(--light-white);
+    padding: .5rem
+}
+
+.teachers .slide:hover .share a:hover{
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.reviews .heading{
+    font-size: 8rem;
+    text-align: center;
+    margin: 4rem 0;
+    color: var(--white);
+    border-top: .2rem solid var(--light-white);
+    padding-top: 2rem;
+}
+
+.reviews .heading span{
+    color: var(--green);
+}
+
+.reviews .reviews-slider{
+    margin: 2rem 0;
+}
+
+.reviews-slider .slide{
+    user-select: none;
+    background: var(--light-bg);
+    border: 1px solid var(--white);
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    
+}
+
+.reviews .slide p{
+    font-size: 1.4rem;
+    color: var(--light-white);
+    margin: 2rem 0;
+    text-align: justify;
+    padding: 0 3rem;
+}
+
+.reviews .slide .user{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 3rem;
+
+}
+
+.reviews .slide .user img{
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid red;
+    width: 6rem;
+    height: 6rem;
+    margin-right: 2rem;
+
+    
+}
+.reviews .slide .user img:hover{
+    width: 8rem;
+    height: 8rem;
+    transform: translateY(-3rem);
+    z-index: 5;
+    margin-top: -2rem;
+    cursor: pointer;
+    
+}
+
+.reviews .slide .user .user-info h3{
+    color: var(--white);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    
+}
+
+.reviews .slide .user .user-info .stars{
+    display: inline-block;
+    color: var(--green);
+    font-size: 1.6rem;
+}
+
+.contact .heading{
+    font-size: 9rem;
+    color: var(--white);
+    text-align: center;
+    border-top: .2rem solid var(--light-white);
+    padding-top: 2rem;
+}
+
+.contact .heading span{
+    color: var(--green);
+}
+
+.contact .row{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.contact .row .image{
+    flex: 1 1 30rem;
+    /* box-shadow: 0 0 25px var(--light-white); */
+    transform: scale(1);
+    outline: none;
+
+}
+
+.contact .row .image{
+    perspective: 2500px;
+}
+
+.contact .row .image img:hover {
+    transform: rotateY(35deg) scale(1.05); /* 3D rotation and slight scaling on hover */
+   box-shadow: 0 3px 10px black;
+
+}
+
+.contact .row .image img{
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.contact .row form{
+    flex: 1 1 50rem;
+    
+    padding: 3rem 3.5rem;
+   
+    font-size: 1.8rem;
+}
+
+.contact .row form span{
+
+    color: var(--light-white);
+
+
+}
+
+
+.contact .row form .box{
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 2.3rem;
+    border-radius: .5rem;
+    background: var(--light-bg);
+    color: var(--white) !important;
+    padding: 2rem;
+    font-size: 1.6rem;
+}
+
+.contact .row form .radio{
+    margin-top: 2rem;
+    
+
+}
+
+.contact .row form .radio label{
+    font-size: 1.6rem;
+    color: var(--light-white);
+}
+
+.contact .row form .radio input{
+    width: 2rem;
+    height: 2rem;
+    appearance: none;
+    background: var(--white);
+    cursor: pointer;
+    
+}
+
+.contact .row form .radio #female{
+    margin-left: 4rem;
+}    
+
+.contact .row form .radio input:checked{
+    background: var(--green);
+}
+
+.contact .row form .radio #female:checked ~ label[for='female']{
+    color: var(--green);
+
+}
+
+.contact .row form .radio #male:checked ~ label[for='male']{
+    color: var(--green);
+
+}
+
+.footer{
+    background: var(--light-bg);
+    text-align: center;
+}
+
+.footer .share a{
+    width: 3.5rem;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    border: .2rem var(--white);
+    border-radius: 50%;
+    font-size: 2rem;
+    margin: 0 2.5rem;
+    margin-top: .5rem;
+    color: var(--white);
+    background: var(--black);
+ }
+
+ .footer .share a:hover{
+    color: var(--green);
+ }
+
+ .footer .copy{
+    margin-top: 2.5rem;
+    padding: 2rem;
+    padding-top: 2.5rem;
+    border-top: .2rem solid var(--light-white);
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    color: var(--light-white);
+ }
+
+ .footer .copy span{
+    color: var(--green);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin: 0 .5rem;
+ }
+
+ .course-slider, .reviews-slider, .teachers-slider{
+    height: fit-content;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media query */
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .home .row .content h2{
+        font-size: 8rem;
+    }
+}
+
+
+
+@media (max-width:768px){
+    html{
+        font-size: 50%;
+    }
+    #menu{
+        display: inline-block;
+    }
+
+    #menu.fa-times{
+        transform: rotate(180deg);
+    }
+
+
+    .header .flex nav{
+        border-top: .1rem solid var(--light-white);
+        border-bottom: .1rem solid var(--light-white);
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background: var(--light-bg);
+        clip-path: polygon(0 0, 100% 0, 61% 0, 34% 0);
+    }
+    .header .flex nav.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        transform: translate3d(5px , 5px , 5px);
+    }
+
+    .header .flex nav a{
+        display: block;
+        margin: 3rem;
+        font-size: 2.5rem;
+    }
+    .home .row .content h2{
+        font-size: 6rem;
+    }
+
+    .about .row .image{
+        margin: 0 5rem;
+    }
+    .teachers .heading{
+        font-size: 6rem;
+    }
+
+    .reviews .heading{
+        font-size: 6rem;
+    }
+
+    .contact .row .image img{
+        width: 65%;
+    }
+
+
+    
+}
+
+
+
+@media (max-width:450px){
+    html{
+        font-size: 40%;
+    }
+    .home .row .content h2{
+        font-size: 6rem;
+    }
+    .course-slider img{
+        height: 250px;
+        aspect-ratio: 1/1;
+    }
+}

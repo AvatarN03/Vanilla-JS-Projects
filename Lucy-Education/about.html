@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Lucy Education - ContactUs</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./style.css" rel="stylesheet">
+        <style>
+            *{
+                
+                padding: 0;
+                box-sizing: unset;
+            }
+
+            .page-contact{
+                background:linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0,0,0,.1)), url('https://th.bing.com/th/id/OIP.eDJbIRxpmyIDSSYMacyD8gHaF2?rs=1&pid=ImgDetMain');      
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100vw;
+                height: 60vh;               
+                color:green;                
+                line-height: 1.5;
+                font-size: 4.2rem;
+                padding-top: 15rem;
+                margin: auto ;
+            }
+
+
+            
+            .page-contact .left a{
+                text-decoration: none;
+                color: pink;
+                font-style: italic;
+                font-size: 2rem;
+                margin-top: auto;
+            }
+
+            .page-contact .left a:hover{
+                color:orangered
+            }
+
+           
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <section class="flex">
+                <a href="#">_ 🅻 🆄 🅲 🆈 _</a>
+                <nav>
+                    <a href="./index.html">Home</a>
+                   
+                </nav>
+                <div id="menu" class="fas fa-bars"></div>
+
+            </section>
+        </header>
+
+        <section class="page-contact">
+            <div class="left">
+            <h1>ThankYou !!<br> <span style="color:yellow; font-size: 5rem;"></span></h1>
+            <p>heyyyyyyyy</p>
+            <p>We Will Soon Contact You !!! </p>
+            <a href="/"> Click to Return to Home</a>
+        </div>
+        
+
+        </section>
+
+        <footer class="footer">
+            <section>
+                <div class="share">
+                    <a href="" class="fab fa-facebook-f"></a>
+                    <a href="" class="fab fa-twitter"></a>
+                    <a href="" class="fab fa-linkedin"></a>
+                    <a href="" class="fab fa-instagram"></a>
+                    <a href="" class="fab fa-youtube"></a>
+                </div>
+                <div class="copy">
+                    &copy; CopyRights @ 2024 By <span> Mr. Prashanth Naidu </span>| All Rights Reserved!
+                </div>
+            </section>
+        </footer>
+    
+    </body>
+    <script>
+    const getData = localStorage.getItem('formData')
+    
+    const get = JSON.parse(getData)
+    console.log(get);
+    
+    console.log(get.name)
+    const name = document.querySelector(".left h1 span")
+    const p = document.getElementsByTagName('p')[0]
+    console.log(p);
+    
+    p.textContent = `You Have Applied for ${get.course}`
+    name.textContent = get.name
+    </script>
+</html>

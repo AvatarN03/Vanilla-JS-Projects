@@ -188,7 +188,15 @@ const allProjectData = {
       description: "A Video Pop-up displays a video in a modal or overlay when triggered, using HTML, CSS, and JavaScript to manage visibility and play functionality.",
       image:"./assets/VideoPop.jpg",
       link: "./Video-Pop/index.html",
+    },
+    {
+      id: 25,
+      title: "Lucy Education Page",
+      description: "A responsive educational landing page built using HTML, CSS, and JavaScript. It features smooth scrolling navigation, structured course sections, and a modern UI design aimed at providing students with accessible learning content. JavaScript is used for form validation and interactive UI elements.",
+      image: "./assets/lucy.png",
+      link: "./Lucy-Education/index.html",
     }
+    
   ],
 };
 
