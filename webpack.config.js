@@ -1,5 +1,4 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
@@ -11,9 +10,9 @@ module.exports = {
   devServer: {
     static: './dist',
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: './index.html', // <--- Updated path to index.html in the root
-    }),
-  ],
+  // plugins: [ // Remove the plugins array
+  //   new HtmlWebpackPlugin({
+  //     template: './index.html',
+  //   }),
+  // ],
 };
