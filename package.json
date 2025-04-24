@@ -17,6 +17,7 @@
     "webpack-dev-server": "^5.2.1"
   },
   "dependencies": {
+    "mini-css-extract-plugin": "^2.9.2",
     "type": "^2.7.3"
   }
 }
