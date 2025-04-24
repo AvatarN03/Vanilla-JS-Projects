@@ -1,0 +1,19 @@
+# Node.js
+node_modules/
+npm-debug.log*
+
+# Webpack build output
+dist/
+
+# Optional: if using dotenv
+.env
+
+# Mac system files
+.DS_Store
+
+# Vercel or Netlify configs (optional)
+.vercel/
+.netlify/
+
+# VSCode settings (optional)
+.vscode/

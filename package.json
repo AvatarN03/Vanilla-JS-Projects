@@ -1,11 +1,18 @@
 {
-  "name": "vanilla-js",
+  "name": "webpack",
   "version": "1.0.0",
-  "description": "A collection of Vanilla JS project ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack serve",
+    "build": "webpack"
   },
-  "author": "AvatarN03",
-  "license": "ISC"
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "webpack": "^5.99.6",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1"
+  }
 }
